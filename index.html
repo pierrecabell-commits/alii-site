@@ -195,6 +195,18 @@ h2{font-size:clamp(1.8rem,3.8vw,2.6rem);font-weight:800;letter-spacing:-.02em;ma
 .tier span{font-size:.85rem;color:var(--muted);display:block}
 .disclaimer{margin-top:28px;color:var(--dim);font-size:.86rem;text-align:center}
 
+/* ---------- milestones ---------- */
+.honors{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:16px;margin-top:8px}
+.honor{background:linear-gradient(165deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 20px;text-align:center;transition:transform .2s,border-color .2s}
+.honor:hover{transform:translateY(-5px);border-color:var(--accent)}
+.honor .medal{width:58px;height:58px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:1.55rem;background:radial-gradient(circle at 32% 30%,rgba(250,204,21,.28),rgba(250,204,21,.06) 62%);
+  border:1px solid rgba(250,204,21,.45);box-shadow:0 0 24px rgba(250,204,21,.10)}
+.honor .stat{font-size:1.5rem;font-weight:800;color:var(--accent);letter-spacing:-.01em}
+.honor .label{font-weight:700;margin:6px 0 6px;font-size:.98rem}
+.honor p{color:var(--muted);font-size:.86rem;margin:0}
+
 /* ---------- about ---------- */
 .about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 @media(max-width:860px){.about{grid-template-columns:1fr}}
@@ -389,6 +401,44 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div class="big">🏠</div>
       <h3>The Alii way</h3>
       <p>Models run on hardware you own, on your own network. Memories stay in your own database. No accounts, no usage meters, no one reading over your shoulder. When the internet goes down, Alii still works — it's <em>right there</em>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="milestones">
+  <div class="kicker reveal">Milestones</div>
+  <h2 class="reveal">Recognition &amp; milestones</h2>
+  <p class="sub reveal">Every number below is measured on the live system — no marketing math.</p>
+  <div class="honors">
+    <div class="honor reveal">
+      <div class="medal">🧠</div>
+      <div class="stat">372,000+</div>
+      <div class="label">Memories in the brain</div>
+      <p>Long-term memory stored locally and recalled on demand — context that never leaves the house.</p>
+    </div>
+    <div class="honor reveal d1">
+      <div class="medal">✓</div>
+      <div class="stat">34 / 34</div>
+      <div class="label">Integration tests passing</div>
+      <p>The full stack — brain, agents, bridges, storage — verified end to end, every service accounted for.</p>
+    </div>
+    <div class="honor reveal d2">
+      <div class="medal">⚙</div>
+      <div class="stat">7 services · 24/7</div>
+      <div class="label">Autonomous operations</div>
+      <p>Seven services running around the clock across a six-machine home cluster, self-monitored.</p>
+    </div>
+    <div class="honor reveal">
+      <div class="medal">🏠</div>
+      <div class="stat">0 cloud calls</div>
+      <div class="label">100% local inference</div>
+      <p>Every answer is generated on home hardware. Your data is never the product.</p>
+    </div>
+    <div class="honor reveal d1">
+      <div class="medal">⚡</div>
+      <div class="stat">36.9 tok/sec</div>
+      <div class="label">Benchmarked in-house</div>
+      <p>Measured on a GTX 1080 in a head-to-head model benchmark — speed proven, not promised.</p>
     </div>
   </div>
 </section>
